@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Electrolize&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+aside {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 950px) {
+  aside {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 950px) {
+  aside span {
+    display: none;
+  }
+}
+aside figure {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+aside figure img {
+  width: 50px;
+}
+aside figure span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1db954;
+}
+aside nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+}
+aside nav a {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+aside nav a:hover {
+  background-color: #1db954;
+}
+@media (max-width: 950px) {
+  aside nav a i {
+    font-size: 23px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.78);
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 100px);
+}/*# sourceMappingURL=style.css.map */
