@@ -4,15 +4,16 @@
 main {
   background-color: variables.$grayColor;
   width: 100%;
-  border-radius: 10%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 20px;
+
   overflow-y: auto;
 
   // Header
   header {
-    background-color: variables.$blackColor;
+    background-color: variables.$darkColor;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +31,7 @@ main {
       border-radius: 5px;
 
       @include mixin.mobile {
-        max-width: unset;
+        max-width: unset; // Daha önce bu elemana verilen max-width değerini etkisiz kıldık
       }
 
       // Input
@@ -56,6 +57,7 @@ main {
       display: flex;
       align-items: center;
       gap: 15px;
+
       a {
         white-space: nowrap;
         font-size: 14px;
@@ -76,13 +78,14 @@ main {
   .music-wrapper {
     // Title
     h1 {
-      margin-top: 20px 0;
+      margin: 20px 0;
     }
+
     // Music List
     .music-list {
       height: 100%;
       display: grid;
-      grid-template-columns: repeat(outo-fit, minmax(200px, 1rf));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       // Card
       .card {
@@ -94,21 +97,22 @@ main {
         border-radius: 10px;
         cursor: pointer;
 
-          &:hover .play {
+        &:hover .play {
           opacity: 1;
           bottom: 20px;
         }
-        
         // Image Wrapper
         figure {
+          position: relative;
           // Image
           img {
             width: 100%;
-             border-radius: 10px;
+            border-radius: 10px;
           }
+
           // Play Button
           .play {
-             opacity: 0;
+            opacity: 0;
             position: absolute;
             right: 10px;
             bottom: -20px;
@@ -122,26 +126,26 @@ main {
             cursor: pointer;
             transition: all 0.3s ease;
 
-             i {
+            i {
               pointer-events: none;
             }
 
-             &:hover {
+            &:hover {
               scale: 1.1;
               transform: rotate(360deg);
               background-color: #106d31;
             }
           }
         }
+
         // Music Info
         .music-info {
-           height: 100%;
+          height: 100%;
           display: flex;
           justify-content: space-between;
           flex-direction: column;
           gap: 10px;
         }
-
       }
     }
   }
