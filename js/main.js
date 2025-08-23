@@ -4,7 +4,7 @@ import UI from "./ui.js";
 // API clasının bir örneğini al
 const api = new API();
 
-// Uı classının da bir öreniğini al
+// Uı classının da bir örneğini al
 const ui = new UI ();
 
 // ! Sayfa yüklendiği 
